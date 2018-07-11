@@ -17,8 +17,7 @@ public class HelloWorldController {
     @ApiOperation(value = "HelloWorld", httpMethod = "POST")
     @PostMapping("/helloworld")
     public String helloWorld(String name){
+        log.info("菜鸟工作室成立啦");
         return "菜鸟工作室" + name;
     }
-
-
 }
