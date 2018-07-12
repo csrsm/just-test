@@ -7,10 +7,11 @@ import com.newbee.repository.UserInfoRepository;
 import com.newbee.util.ResponseResult;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-
+@Service
 public class UserInfoServiceImpl implements UserInfoService{
 
     @Resource

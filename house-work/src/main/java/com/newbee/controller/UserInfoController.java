@@ -19,7 +19,7 @@ public class UserInfoController {
 
     @ApiOperation(value = "接口：新增用户信息" ,httpMethod = "POST")
     @PostMapping(value = "/saveUser")
-    public Object addUser (@RequestBody User user){
+    public Object saveUser (@RequestBody User user){
         return userInfoService.saveUser(user);
     }
 

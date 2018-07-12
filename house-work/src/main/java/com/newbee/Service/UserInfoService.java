@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
  * @author cuiming
  * @date 2018.07.12
  */
-@Service
+
 public interface UserInfoService {
 
     /**
