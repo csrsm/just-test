@@ -11,9 +11,12 @@ spring:
 #    password:
 #    timeout: 0
   datasource:
-    url: jdbc:mysql://192.168.1.21:3306/house-work?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: demo
-    password: 111111
+#    url: jdbc:mysql://192.168.1.21:3306/house-work?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/house_work?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: demo
+#    password: 111111
+    username: root
+    password: 245129248
     driver-class-name: com.mysql.jdbc.Driver
     dbcp2:
       initialSize: 5
