@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author  cuiming
@@ -19,9 +20,8 @@ public class UserInfo extends Model<UserInfo> {
     @TableId(type = IdType.AUTO)
     private Long id;
     private String userName;
-    private String userSex;
-    private String isMarry;
-    private String workNum;
+    private String userWxid;
+    private Date joinDate;
 
     @Override
     protected Serializable pkVal() {

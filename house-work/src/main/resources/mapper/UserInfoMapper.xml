@@ -4,14 +4,13 @@
 
     <resultMap id="BaseResultMap" type="com.newbee.Model.UserInfo">
         <id column="id" property="id" />
+        <result column="user_wxid" property="userWxid" />
         <result column="user_name" property="userName" />
-        <result column="user_sex" property="userSex" />
-        <result column="is_marry" property="isMarry" />
-        <result column="work_num" property="workNum" />
+        <result column="join_date" property="joinDate" />
     </resultMap>
 
     <!-- 通用查询结果列-->
     <sql id="Base_Column_List">
-        id, user_name AS userName, user_sex AS userSex, is_marry AS isMarry, work_num AS workNum
+        id, user_name AS userName, user_wxid AS userWxid, join_date AS joinDate
     </sql>
 </mapper>
